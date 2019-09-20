@@ -1,7 +1,7 @@
-<div id="deleteProductModal" class="modal fade">
+<div id="deletecontactModal" class="modal fade">
         <div class="modal-dialog">
                 <div class="modal-content">
-                        <form name="delete_product" id="delete_product">
+                        <form name="delete_contact" id="delete_contact">
                                 <div class="modal-header">
                                         <h4 class="modal-title">Eliminar Contacto</h4>
                                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">

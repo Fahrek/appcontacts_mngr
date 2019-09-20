@@ -12,7 +12,7 @@ if (empty($_POST['delete_id'])) {
     // DELETE FROM  database
     $sql   = "DELETE FROM users WHERE id='$id_contact'";
     $query = mysqli_query($con, $sql);
-    // if product has been added successfully
+    // if contact has been added successfully
     if ($query) {
         $messages[] = 'Contacto eliminado correctamente';
     } else {

@@ -31,7 +31,7 @@
                                         <form method="post" action="ajax/export.php" align="center">
                                                 <input id="export" type="submit" name="export" value="CSV Export" class="btn btn-success" />
                                         </form>
-                                        <a href="#addProductModal" class="btn btn-success" data-toggle="modal">
+                                        <a href="#addcontactModal" class="btn btn-success" data-toggle="modal">
                                                 <i class="material-icons">&#xE147;</i>
                                                 <span>Agregar nuevo contacto</span>
                                         </a>

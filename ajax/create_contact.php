@@ -18,9 +18,9 @@ if (empty($_POST['name'])) {
 //    var_dump($sql);
 //    die;
     $query = mysqli_query($con, $sql);
-    // if product has been added successfully
+    // if contact has been added successfully
     if ($query) {
-        $messages[] = 'El producto ha sido guardado con éxito.';
+        $messages[] = 'El contacto ha sido guardado con éxito.';
     } else {
         $errors[] = 'Lo sentimos, el registro falló. Por favor, regrese y vuelva a intentarlo.';
     }

@@ -18,7 +18,7 @@ if (empty($_POST['id'])) {
     // UPDATE data into database
     $sql   = "UPDATE users SET name = '" . $contact_name . "', lname = '" . $contact_lname . "', email = '" . $contact_email . "', cat = '" . $contact_cat . "' WHERE id = '" . $id . "' ";
     $query = mysqli_query($con, $sql);
-    // if product has been added successfully
+    // if contact has been added successfully
     if ($query) {
         $messages[] = 'Contacto editado correctamente.';
     } else {

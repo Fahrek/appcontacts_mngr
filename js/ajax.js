@@ -4,7 +4,7 @@ $(function () {
 
 function load(page) {
     let query = $("#q").val();
-    let per_page = 10;
+    let per_page = 5;
     let param = {"action": "ajax", "page": page, 'query': query, 'per_page': per_page};
 
     $("#loader").fadeIn('slow');
@@ -22,7 +22,7 @@ function load(page) {
     })
 }
 
-$('#editProductModal').on('show.bs.modal', function (event) {
+$('#editcontactModal').on('show.bs.modal', function (event) {
     let button = $(event.relatedTarget); // Button that triggered the modal
 
     let id = button.data('id');
@@ -38,14 +38,14 @@ $('#editProductModal').on('show.bs.modal', function (event) {
     $('#edit_category').val(cat);
 });
 
-$('#deleteProductModal').on('show.bs.modal', function (event) {
+$('#deletecontactModal').on('show.bs.modal', function (event) {
     let button = $(event.relatedTarget); // Button that triggered the modal
     let id = button.data('id');
 
     $('#delete_id').val(id);
 });
 
-$("#edit_product").submit(function (event) {
+$("#edit_contact").submit(function (event) {
     let param = $(this).serialize();
 
     $.ajax({
@@ -58,13 +58,13 @@ $("#edit_product").submit(function (event) {
         success: function (datos) {
             $("#resultados").html(datos);
             load(1);
-            $('#editProductModal').modal('hide');
+            $('#editcontactModal').modal('hide');
         }
     });
     event.preventDefault();
 });
 
-$("#add_product").submit(function (event) {
+$("#add_contact").submit(function (event) {
     let param = $(this).serialize();
 
     $.ajax({
@@ -77,13 +77,13 @@ $("#add_product").submit(function (event) {
         success: function (datos) {
             $("#resultados").html(datos);
             load(1);
-            $('#addProductModal').modal('hide');
+            $('#addcontactModal').modal('hide');
         }
     });
     event.preventDefault();
 });
 
-$("#delete_product").submit(function (event) {
+$("#delete_contact").submit(function (event) {
     let param = $(this).serialize();
 
     $.ajax({
@@ -96,7 +96,7 @@ $("#delete_product").submit(function (event) {
         success: function (datos) {
             $("#resultados").html(datos);
             load(1);
-            $('#deleteProductModal').modal('hide');
+            $('#deletecontactModal').modal('hide');
         }
     });
     event.preventDefault();

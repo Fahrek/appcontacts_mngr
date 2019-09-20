@@ -73,7 +73,7 @@ if ($action === 'ajax') {
 
                                                     <button class = "edit clear"
                                                             href = "#"
-                                                               data-target   = "#editProductModal"
+                                                               data-target   = "#editcontactModal"
                                                                data-toggle   = "modal"
                                                                data-name     = "<?php echo $contact_name  ?>"
                                                                data-lname    = "<?php echo $contact_lname ?>"
@@ -88,7 +88,7 @@ if ($action === 'ajax') {
 
                                                     <button class = "delete clear"
                                                             href = "#"
-                                                               data-target = "#deleteProductModal"
+                                                               data-target = "#deletecontactModal"
                                                                data-toggle = "modal"
                                                                data-id     = "<?php echo $contact_id; ?>">
                                                                     <i style="font-size: 1.3rem; margin:0px 5px 0px 0px;"
