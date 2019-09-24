@@ -22,10 +22,12 @@
                                                 <label>Email</label>
                                                 <input type="email" name="email" id="email" class="form-control" required>
                                         </div>
-                                        <div class="form-group">
-                                                <label>Categoría</label>
-                                                <input type="text" data-role="tagsinput" value="Amsterdam,Washington" name="cat" id="category" class="form-control"
-                                                       required>
+<!--                                        <label>Categoría</label>-->
+                                        <div id="tags" class="form-group">
+                                                <span>Tags</span>
+                                                <input type="text" value="" placeholder="Añade una etiqueta" name="cat" id="category" class="form-control">
+<!--                                                <input type="text" data-role="tagsinput" value="Amsterdam,Washington" name="cat" id="category" class="form-control"-->
+<!--                                                       required>-->
                                         </div>
 
                                 </div>

@@ -16,7 +16,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
         <link rel="stylesheet" href="css/custom.css">
-        <link rel="stylesheet" href="css/bootstrap-tagsinput.css">
+<!--        <link rel="stylesheet" href="css/bootstrap-tagsinput.css">-->
 </head>
 
 <body>
@@ -65,9 +65,9 @@
 <!-- Delete Modal HTML -->
 <?php include 'html/modal_delete.php'; ?>
 
-<script src="js/ajax.js"></script>
-<script src="js/bootstrap-tagsinput.js"></script>
-<script src="js/typeahead.bundle.js"></script>
+<script src="js/scripts.js"></script>
+<!--<script src="js/bootstrap-tagsinput.js"></script>-->
+<!--<script src="js/typeahead.bundle.js"></script>-->
 <script src="https://kit.fontawesome.com/f120471f65.js" crossorigin="anonymous"></script>
 
 </body>
